@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import App from './App'
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import RootLayout, { RootIndex } from "./pages";
 import About from "./pages/about";
 
+
+ 
 const router = createHashRouter([
   {
     path: "/",
@@ -14,6 +17,10 @@ const router = createHashRouter([
         path: "/about",
         element: <About />,
       },
+      {
+        path: "/App",
+        element: <App />,
+      }
     ],
   },
 ]);
@@ -23,4 +30,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+
+
 
