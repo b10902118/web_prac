@@ -12,5 +12,5 @@ export default function RootLayout() {
 }
 
 export function RootIndex() {
-  return <h1> Hi, I am b10902118 崔俊威. I am new to web programming. </h1>;
+  return <h1>Home</h1> <h2> Hi, I am b10902118 崔俊威. I am new to web programming. </h2>;
 }
